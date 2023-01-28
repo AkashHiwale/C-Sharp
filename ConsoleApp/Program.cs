@@ -1,4 +1,5 @@
 ﻿using Basics.ConditionStatements;
+using Basics.Iteration;
 using CommonHelper;
 
 namespace ConsoleApp;
@@ -42,6 +43,19 @@ class Program
         Console.Write("Please enter image width: ");
         int width = TypeConversion.StringToInt(Console.ReadLine());
         Console.WriteLine(ConditionStatements.ImageOrientation(height, width));
+        #endregion
+
+        #region Iteration
+        //EvenNumbers
+        Console.Write("Please enter a number till which you want to receive even numbers: ");
+        int evenNumberInput = TypeConversion.StringToInt(Console.ReadLine());
+        Console.WriteLine(Iteration.EvenNumbers(evenNumberInput));
+
+        //OddNumbers
+        Console.Write("Please enter a number till which you want to receive odd numbers: ");
+        int oddNumberInput = TypeConversion.StringToInt(Console.ReadLine());
+        Console.WriteLine(Iteration.OddNumbers(oddNumberInput));
+
         #endregion
     }
 }
