@@ -30,13 +30,13 @@ public class ConditionStatements
         switch (season)
         {
             case "summer":
-                output =  "It's a summer season, It's good time to go to a beach.";
+                output = "It's a summer season, It's good time to go to a beach.";
                 break;
             case "winter":
-                output =  "It's a winter season, It's best season to go to a trip.";
+                output = "It's a winter season, It's best season to go to a trip.";
                 break;
             case "rainy":
-                output =  "It's a rainy sesaon. It's best time to get a tea and snake.";
+                output = "It's a rainy sesaon. It's best time to get a tea and snake.";
                 break;
             default:
                 output = "Sorry, I don't understand this season.";
