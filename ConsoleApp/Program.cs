@@ -1,6 +1,8 @@
 ﻿using Basics.ConditionStatements;
 using Basics.Iteration;
+using Basics.Arrays;
 using CommonHelper;
+using Basics.Lists;
 
 namespace ConsoleApp;
 class Program
@@ -9,7 +11,7 @@ class Program
     {
         Console.WriteLine("Hello!");
 
-        #region ConditionalStatements
+        /*#region ConditionalStatements
         //TimesOfDay
         Console.Write("Please enter current hour between 1 and 24: ");
         int input = TypeConversion.StringToInt(Console.ReadLine());
@@ -70,6 +72,20 @@ class Program
         Console.Write("Please enter comma separated numbers to find maximum: ");
         string commaSeparatedNumbers = Console.ReadLine();
         Console.WriteLine(Iteration.FindMaximum(commaSeparatedNumbers));
+        #endregion
+
+        #region Array
+        //ReverseString
+        Console.Write("Enter a name to reverse: ");
+        string nameToReverse = Console.ReadLine();
+        Console.WriteLine(Arrays.ReverseString(nameToReverse));
+        #endregion*/
+
+        #region Lists
+        //SmallestNumbers
+        Console.Write("Enter comma separated list of numbers to find three smallest numbers: ");
+        string listOfNumbers = Console.ReadLine();
+        Console.WriteLine(Lists.SmallestNumbers(listOfNumbers));
         #endregion
     }
 }
