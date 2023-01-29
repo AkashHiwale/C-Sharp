@@ -1,8 +1,8 @@
-﻿using Basics.ConditionStatements;
+﻿using Basics.Arrays;
+using Basics.ConditionStatements;
 using Basics.Iteration;
-using Basics.Arrays;
-using CommonHelper;
 using Basics.Lists;
+using CommonHelper;
 
 namespace ConsoleApp;
 class Program
@@ -11,7 +11,7 @@ class Program
     {
         Console.WriteLine("Hello!");
 
-        /*#region ConditionalStatements
+        #region ConditionalStatements
         //TimesOfDay
         Console.Write("Please enter current hour between 1 and 24: ");
         int input = TypeConversion.StringToInt(Console.ReadLine());
@@ -79,7 +79,7 @@ class Program
         Console.Write("Enter a name to reverse: ");
         string nameToReverse = Console.ReadLine();
         Console.WriteLine(Arrays.ReverseString(nameToReverse));
-        #endregion*/
+        #endregion
 
         #region Lists
         //SmallestNumbers
