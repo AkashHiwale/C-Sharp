@@ -56,6 +56,20 @@ class Program
         int oddNumberInput = TypeConversion.StringToInt(Console.ReadLine());
         Console.WriteLine(Iteration.OddNumbers(oddNumberInput));
 
+        //DivisibleRangeCount
+        Console.Write("Please enter a number to check how many numbers are divible by it from 1 to 100: ");
+        int num = TypeConversion.StringToInt(Console.ReadLine());
+        Console.WriteLine(Iteration.DivisibleRangeCount(num));
+
+        //Factorial
+        Console.Write("Please enter a number to check to calculate it's factorial: ");
+        int factorialNumber = TypeConversion.StringToInt(Console.ReadLine());
+        Console.WriteLine(Iteration.Factorial(factorialNumber));
+
+        //FindMaximum
+        Console.Write("Please enter comma separated numbers to find maximum: ");
+        string commaSeparatedNumbers = Console.ReadLine();
+        Console.WriteLine(Iteration.FindMaximum(commaSeparatedNumbers));
         #endregion
     }
 }
