@@ -2,6 +2,7 @@
 using Basics.ConditionStatements;
 using Basics.Iteration;
 using Basics.Lists;
+using Basics.Strings;
 using CommonHelper;
 
 namespace ConsoleApp;
@@ -86,6 +87,28 @@ class Program
         Console.Write("Enter comma separated list of numbers to find three smallest numbers: ");
         string listOfNumbers = Console.ReadLine();
         Console.WriteLine(Lists.SmallestNumbers(listOfNumbers));
+        #endregion
+
+        #region Strings
+        //CheckForConsecutiveNumbers
+        Console.Write("Please enter consecutive numbers separated by '-': ");
+        string consecutiveNumbersInput = Console.ReadLine();
+        Console.WriteLine(StringManipulation.CheckForConsecutiveNumbers(consecutiveNumbersInput));
+
+        //CheckForDuplicateNumber
+        Console.Write("Please enter consecutive numbers separated by '-': ");
+        string duplicateNumbersInput = Console.ReadLine();
+        Console.WriteLine(StringManipulation.CheckForDuplicateNumber(duplicateNumbersInput));
+
+        //MakeStringPascalCase
+        Console.Write("Please enter few words separated by ' ': ");
+        string wordsToPascalCase = Console.ReadLine();
+        Console.WriteLine(StringManipulation.MakeStringPascalCase(wordsToPascalCase));
+
+        //CountVowelsInString
+        Console.Write("Please enter a word to count vowels present in it: ");
+        string wordsToCountVowels = Console.ReadLine();
+        Console.WriteLine(StringManipulation.CountVowelsInString(wordsToCountVowels));
         #endregion
     }
 }
