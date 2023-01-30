@@ -90,9 +90,15 @@ class Program
         #endregion
 
         #region Strings
+        //CheckForConsecutiveNumbers
         Console.Write("Please enter consecutive numbers separated by '-': ");
         string consecutiveNumbersInput = Console.ReadLine();
         Console.WriteLine(StringManipulation.CheckForConsecutiveNumbers(consecutiveNumbersInput));
+
+        //CheckForDuplicateNumber
+        Console.Write("Please enter consecutive numbers separated by '-': ");
+        string duplicateNumbersInput = Console.ReadLine();
+        Console.WriteLine(StringManipulation.CheckForDuplicateNumber(duplicateNumbersInput));
         #endregion
     }
 }

@@ -39,4 +39,42 @@ public class StringManipulation
         }
         return output;
     }
+
+    public static string CheckForDuplicateNumber(string input)
+    {
+        var list = input.Split("-").ToList();
+        var listOfNumbers = new List<int>();
+
+        foreach (var number in list)
+        {
+            listOfNumbers.Add(Convert.ToInt32(number));
+        }
+
+        string output = string.Empty;
+        bool firstIteration = true;
+        int previousNumber = 0;
+        foreach (var number in listOfNumbers)
+        {
+            if (firstIteration)
+            {
+                previousNumber = number;
+                firstIteration = false;
+            }
+            else if (number == previousNumber)
+            {
+                output = "Duplicates found in the list.";
+                break;
+                
+            }
+            else
+            {
+                continue;
+            }
+        }
+        if (string.IsNullOrEmpty(output))
+        {
+            output = "No duplicates found.";
+        }
+        return output;
+    }
 }
