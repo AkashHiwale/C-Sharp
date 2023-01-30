@@ -93,4 +93,23 @@ public class StringManipulation
         }
         return output;
     }
+
+    public static string CountVowelsInString(string input)
+    {
+        string output = string.Empty;
+        var listOfVowels = new List<string>() { "a", "e", "i", "o", "u" };
+        var count = 0;
+        if (string.IsNullOrEmpty(input))
+        {
+            return "Invalid Input";
+        }
+        foreach(char c in input)
+        {
+            if (listOfVowels.Contains(c.ToString().ToLower()))
+            {
+                count++;
+            }
+        }
+        return $"In the given string, {count} vowel(s) found.";
+    }
 }
