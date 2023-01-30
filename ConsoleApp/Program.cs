@@ -12,7 +12,7 @@ class Program
     {
         Console.WriteLine("Hello!");
 
-        #region ConditionalStatements
+        /*#region ConditionalStatements
         //TimesOfDay
         Console.Write("Please enter current hour between 1 and 24: ");
         int input = TypeConversion.StringToInt(Console.ReadLine());
@@ -46,9 +46,9 @@ class Program
         Console.Write("Please enter image width: ");
         int width = TypeConversion.StringToInt(Console.ReadLine());
         Console.WriteLine(ConditionStatements.ImageOrientation(height, width));
-        #endregion
+        #endregion*/
 
-        #region Iteration
+       /* #region Iteration
         //EvenNumbers
         Console.Write("Please enter a number till which you want to receive even numbers: ");
         int evenNumberInput = TypeConversion.StringToInt(Console.ReadLine());
@@ -73,23 +73,23 @@ class Program
         Console.Write("Please enter comma separated numbers to find maximum: ");
         string commaSeparatedNumbers = Console.ReadLine();
         Console.WriteLine(Iteration.FindMaximum(commaSeparatedNumbers));
-        #endregion
+        #endregion*/
 
-        #region Array
+        /*#region Array
         //ReverseString
         Console.Write("Enter a name to reverse: ");
         string nameToReverse = Console.ReadLine();
         Console.WriteLine(Arrays.ReverseString(nameToReverse));
-        #endregion
+        #endregion*/
 
-        #region Lists
+        /*#region Lists
         //SmallestNumbers
         Console.Write("Enter comma separated list of numbers to find three smallest numbers: ");
         string listOfNumbers = Console.ReadLine();
         Console.WriteLine(Lists.SmallestNumbers(listOfNumbers));
-        #endregion
+        #endregion*/
 
-        #region Strings
+        /*#region Strings
         //CheckForConsecutiveNumbers
         Console.Write("Please enter consecutive numbers separated by '-': ");
         string consecutiveNumbersInput = Console.ReadLine();
@@ -99,6 +99,11 @@ class Program
         Console.Write("Please enter consecutive numbers separated by '-': ");
         string duplicateNumbersInput = Console.ReadLine();
         Console.WriteLine(StringManipulation.CheckForDuplicateNumber(duplicateNumbersInput));
-        #endregion
+
+        //MakeStringPascalCase
+        Console.Write("Please enter few words separated by ' ': ");
+        string words = Console.ReadLine();
+        Console.WriteLine(StringManipulation.MakeStringPascalCase(words));
+        #endregion*/
     }
 }

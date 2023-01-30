@@ -77,4 +77,20 @@ public class StringManipulation
         }
         return output;
     }
+
+    public static string MakeStringPascalCase(string input)
+    {
+        string output = string.Empty;
+        if (string.IsNullOrEmpty(input))
+        {
+            return "Invalid Input";
+        }
+        var listOfWords = input.Split(" ");
+
+        foreach(var word in listOfWords)
+        {
+            output = output + word.Substring(0, 1).ToUpper() + word.Substring(1).ToLower();
+        }
+        return output;
+    }
 }
